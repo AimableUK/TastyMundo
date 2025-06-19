@@ -83,7 +83,7 @@ const Home = () => {
   return (
     <div>
       {/* First div */}
-      <div className="home flex flex-col lg:pt-48 p-20 pl-2 md:pl-32 relative overflow-hidden">
+      <div className="home flex flex-col pt-40 lg:pt-48 p-20 pl-10 md:pl-32 relative overflow-hidden">
         <div
           className="absolute inset-0 -z-10"
           style={{
@@ -101,27 +101,25 @@ const Home = () => {
             <br /> Machine
             <br /> Intelligence
           </h1>
-          <Link to={"/aichat"} className="inline-block">
-            <button className="flex flex-row mt-10 bg-primaryColor border border-red-500 hover:bg-primaryBody transition duration-300 ease-in-out rounded-3xl p-2">
-              <svg
-                className="size-6"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              Start Now
-            </button>
-          </Link>
+          <button className="flex flex-row mt-10 bg-primaryColor border border-red-500 hover:bg-primaryBody transition duration-300 ease-in-out rounded-3xl p-2">
+            <svg
+              className="size-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"
+                clipRule="evenodd"
+              />
+            </svg>
+            Start Now
+          </button>
         </div>
       </div>
       {/* second div */}
-      <div className="w-[280px] md:w-fit smallText flex flex-row justify-center nd:items-end m-5 -mt-28 md:m-20 md:-mt-32 bg-primaryBody  border rounded-md ">
+      <div className="md:w-fit smallText flex flex-row justify-center nd:items-end m-5 -mt-28 md:m-20 md:-mt-32 bg-primaryBody  border rounded-md ">
         <div>
           <img
             src={EllipseImg}
@@ -145,16 +143,16 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="flex flex-row gap-2 justify-between items-center">
+          <div className="flex flex-col md:flex-row gap-2 justify-between md:items-center">
             <div className="flex flex-col lg:flex-row lg:items-center">
               <img
                 src={planeImg}
                 alt="plane image"
-                className="w-12 h-12 mr-5  mb-2 lg:mb-0 "
+                className="w-12 h-12 mr-5 mb-2 lg:mb-0"
               />
               <div>
                 <h1 className="font-semibold text-lg mb-2">Made Simple</h1>
-                <p className="text-sm">
+                <p className="text-sm text-wrap">
                   At Tasty Mundo, we simplify cooking by helping you find
                   recipesbased on the ingredients you already have.
                 </p>
@@ -164,7 +162,7 @@ const Home = () => {
               <img
                 src={BrightImg}
                 alt="plane image"
-                className="w-12 h-12 mr-5 mb-2 lg:mb-0 "
+                className="w-12 h-12 mr-5 mb-2 lg:mb-0"
               />
               <div>
                 <h1 className="font-semibold text-lg mb-2">
@@ -188,7 +186,7 @@ const Home = () => {
       </div>
 
       {/* third div */}
-      <div className="flex flex-col lg:flex-row p-20">
+      <div className="flex flex-col lg:flex-row p-5 md:p-20">
         <img
           src={LifeImg}
           alt="plane image"
@@ -199,29 +197,18 @@ const Home = () => {
           <h1 className="font-poppins font-semibold">
             Ai Generated Recipe Ideas
           </h1>
-          <p>
-            At Tasty Mundo, we’re driven by the belief that the best experiences
-            come from simplicity and creativity. Our goal is to provide
-            solutions that not only save time but also spark inspiration.
-            Whether you&apos;re navigating the kitchen with limited ingredients
-            or looking for new ways to bring ideas to life, our platform is here
-            to help. By blending technology with your unique tastes and
-            preferences, we offer a personalized experience that adapts to your
-            needs, helping you discover new possibilities every day. We aim to
-            make life easier, more enjoyable, and full of unexpected
-            discoveries, all while empowering you to be more resourceful and
-            creative.
-            <br />
-            Our approach is all about making everyday moments more enjoyable and
-            less stressful. At Tasty Mundo, we believe that cooking and
-            creativity shouldn’t feel overwhelming or complicated. That’s why
-            we’ve built a platform that makes finding new recipes and
-            discovering exciting ideas as easy as possible. We give you the
-            tools to explore, learn, and create with confidence, knowing that
-            the possibilities are endless. Whether you’re trying to create a new
-            dish or seeking fresh inspiration for your next meal, we’re here to
-            help you unlock your full potential. With Tasty Mundo, every day can
-            be a chance to explore something new and make something delicious.
+          <p className="text-xl ">
+            At Tasty Mundo, we&apos;re driven by the belief that the best
+            experiences come from simplicity and creativity. Our goal is to
+            provide solutions that not only save time but also spark
+            inspiration. Whether you&apos;re navigating the kitchen with limited
+            ingredients or looking for new ways to bring ideas to life, our
+            platform is here to help. By blending technology with your unique
+            tastes and preferences, we offer a personalized experience that
+            adapts to your needs, helping you discover new possibilities every
+            day. We aim to make life easier, more enjoyable, and full of
+            unexpected discoveries, all while empowering you to be more
+            resourceful and creative.
           </p>
         </div>
       </div>
@@ -235,7 +222,7 @@ const Home = () => {
         />
         <div className="w-[250px] md:w-full p-2 smallText bg-getStartedsecColor flex flex-col justify-between items-center md:p-9 rounded-md">
           <p className="mb-1">Discover, Cook, Enjoy</p>
-          <h1 className="font-poppins font-semibold text-3xl text-center">
+          <h1 className="font-poppins font-semibold text-xl md:text-3xl text-center">
             Start creating delicious meals with just <br />a few ingredients.{" "}
             <br />
             Tasty Mundo is here for you
@@ -264,58 +251,60 @@ const Home = () => {
 
       {/* sixth div */}
       <div className="flex flex-col items-center justify-center mt-10">
-        <div className="text-center">
-          <h1 className="font-poppins text-3xl">
+        <div className="text-center mx-2 md:mx-0">
+          <h1 className="text-3xl font-bold">
             Frequently Asked Questions (FAQ)
           </h1>
-          <p className="text-sm pt-5">
+          <p className="text-sm md:text-xl pt-5">
             Get the information you need to make the most of our platform.
           </p>
         </div>
-        <section className="faq p-20 pl-10 pr-10 md:pl-40 md:pr-40 w-full">
+        <section className="faq p-5 md:p-10">
           {faqs.map((faq, index) => (
             <div key={index} className="">
               <div
                 onClick={() => showAns(index)}
                 className="flex flex-row cursor-pointer"
               >
-                {openIndex === index ? (
-                  <svg
-                    className="size-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M5 12h14"
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    className="size-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M12 4.5v15m7.5-7.5h-15"
-                    />
-                  </svg>
-                )}
+                <div className="bg-slate-800 my-1 relative rounded-md px-1">
+                  {openIndex === index ? (
+                    <svg
+                      className="size-6 absolute"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 12h14"
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      className="size-6 absolute"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 4.5v15m7.5-7.5h-15"
+                      />
+                    </svg>
+                  )}
 
-                <h2 className="text-xl ml-3">{faq.question}</h2>
+                  <h2 className="text-xl ml-7">{faq.question}</h2>
+                </div>
               </div>
 
               <div
-                className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                className={`bg-slate-900 rounded-md transition-all duration-300 ease-in-out overflow-hidden ${
                   openIndex === index
                     ? "max-h-40 opacity-100"
                     : "max-h-0 opacity-0"
@@ -337,7 +326,7 @@ const Home = () => {
           </h1>
           <p>Discover the Magic of Effortless Cooking</p>
           <div className="mt-2 flex justify-center">
-            <video src={navigationVideo} controls className="w-3/4"></video>
+            {/* <video src={navigationVideo} controls className="w-3/4"></video> */}
           </div>
         </div>
       </div>
