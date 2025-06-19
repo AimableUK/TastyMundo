@@ -6,7 +6,6 @@ import Home from './Components/Home/Home'
 import AboutUs from './Components/AboutUs/AboutUs'
 import Services from './Components/Services/Services'
 import Layout from './Layout';
-import ChatHome from './Components/ChatHome/ChatHome';
 import Page404 from './Components/Page404/Page404';
 
 const router = createBrowserRouter(
@@ -14,7 +13,6 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layout />}>
       <Route path='' element={<Home />} />
       <Route path='aboutus' element={<AboutUs />} />
-      <Route path='aichat' element={<ChatHome />} />
       <Route path='services' element={<Services />} />
       <Route path='*' element={<Page404 />} />
     </Route>
