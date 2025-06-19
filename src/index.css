@@ -52,9 +52,3 @@ body {
 .service div:hover{
   transform: scale(1.03)
 }
-
-
-  
-.suggested-recipe-container ul li, .suggested-recipe-container ol li {
-  margin-bottom: 8px;
-}
