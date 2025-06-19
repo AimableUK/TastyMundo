@@ -321,7 +321,7 @@ const Home = () => {
       <div className="flex flex-col mb-5 md:p-20 items-center">
         <div className="smallText text-center">
           <p>See it in Action</p>
-          <h1 className="text-3xl font-poppins font-semibold">
+          <h1 className="text-xl md:text-2xl font-poppins font-semibold">
             Watch how Tasty Mundo makes cooking easier and more fun!
           </h1>
           <p>Discover the Magic of Effortless Cooking</p>
