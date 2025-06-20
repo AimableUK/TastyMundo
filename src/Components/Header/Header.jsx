@@ -1,4 +1,4 @@
-import tastyMundoLogo from '../../assets/tastyMundo.png'
+import tastyMundoLogo from '/tastyMundo.png'
 import { Link } from 'react-router-dom'
 
 export default function Header() {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import tastyMundoLogo from '../../assets/tastyMundo.png'
+import tastyMundoLogo from '/tastyMundo.png'
 import { FaTwitter, FaLinkedin, FaEnvelope, FaGithub } from "react-icons/fa";
 
 
